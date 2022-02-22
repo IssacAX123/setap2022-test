@@ -1,0 +1,30 @@
+name: Code Documentation Generator
+
+on:
+    push:
+        branches: [backend_development]
+    pull_request:
+        branches: [backend_development]
+
+jobs:
+    sphinx_generate_documents:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-python@v2
+            - with:
+                python-version: 3.8
+            - run: |
+                pip install -U sphinx
+                sphinx-apidoc -f -o backend/docs/_code_docs_builder/apidoc backend/src
+                cd backend/docs/_code_docs_builder
+                make clean
+                make html
+                cp -a build/html/. ../code_docs
+                cd ../../../
+                git config user.name "GitHub Code Documentation Generator Bot"
+                git config user.email "<>"
+                git add .
+                git commit -am "auto generates code documentation"
+                git push origin backend_development
+
