@@ -2,9 +2,7 @@ name: Code Documentation Generator
 
 on:
     push:
-        branches: [backend_development]
-    pull_request:
-        branches: [backend_development]
+        branches: [backend_development, backend_production]
 
 jobs:
     sphinx_generate_documents:
@@ -16,6 +14,7 @@ jobs:
                   python-version: 3.8
             - run: |
                 pip install -U sphinx
+                pip install sphinx-rtd-theme
                 sphinx-apidoc -f -o backend/docs/_code_docs_builder/apidoc backend/src
                 cd backend/docs/_code_docs_builder
                 make clean
