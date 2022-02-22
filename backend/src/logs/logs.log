@@ -1,0 +1,21 @@
+2022-02-21 22:45:45,717 INFO root MainThread : 
+
+2022-02-21 22:45:45,726 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-02-21 22:46:46,103 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:46:46] "[33mGET / HTTP/1.1[0m" 404 -
+2022-02-21 22:46:54,109 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:46:54] "[33mGET /api/v1/docs HTTP/1.1[0m" 404 -
+2022-02-21 22:47:12,280 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Feb/2022 22:47:12] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:48:01,061 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-02-21 22:49:45,028 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-02-21 22:49:49,257 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:49:49] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:49:50,953 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:49:50] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:49:52,782 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Feb/2022 22:49:52] "[33mGET /api/v1 HTTP/1.1[0m" 404 -
+2022-02-21 22:50:03,954 INFO werkzeug Thread-4 : 127.0.0.1 - - [21/Feb/2022 22:50:03] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:50:32,757 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-02-21 22:50:33,363 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:50:33] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:50:34,396 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:50:34] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:51:01,836 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-02-21 22:51:03,328 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:51:03] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:51:04,313 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:51:04,488 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:51:04,664 INFO werkzeug Thread-4 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
+2022-02-21 22:51:04,811 INFO werkzeug Thread-5 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
