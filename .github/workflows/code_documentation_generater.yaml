@@ -12,8 +12,8 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
-            - with:
-                python-version: 3.8
+              with:
+                  python-version: 3.8
             - run: |
                 pip install -U sphinx
                 sphinx-apidoc -f -o backend/docs/_code_docs_builder/apidoc backend/src
