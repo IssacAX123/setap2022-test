@@ -19,7 +19,7 @@ jobs:
                 cd backend/docs/_code_docs_builder
                 make clean
                 make html
-                cp -a build/html/. ../code_docs
+                cp -a _build/html/. ../code_docs
                 cd ../../../
                 git config user.name "GitHub Code Documentation Generator Bot"
                 git config user.email "<>"
