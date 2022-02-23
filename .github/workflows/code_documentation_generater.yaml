@@ -25,5 +25,5 @@ jobs:
                 git config user.email "<>"
                 git add .
                 git commit -am "auto generates code documentation"
-                git push origin backend_development
+                git push origin ${GITHUB_REF##*/}
 
