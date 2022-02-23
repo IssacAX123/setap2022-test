@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\.github\workflows\build_docker_and_deploy_heroku.yaml">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\backend\docs\_api_docs_builder\oa.json">
           <value>
             <Attribute>

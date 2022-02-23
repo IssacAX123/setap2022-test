@@ -1,13 +1,13 @@
 from flask import Flask, render_template
 from flask_restful import Api
-from backend.src.endpoints.task import Task
+from endpoints.task import Task
 import logging
 
 app = Flask(__name__)
 api = Api(app)
 
 if not app.debug:
-    logging.basicConfig(filename='backend/src/logs/logs.log', level=logging.WARNING, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+    logging.basicConfig(filename='logs/logs.log', level=logging.WARNING, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
     logging.info('\n')
 
 api.add_resource(Task, "/api/v1/task/<string:user_id>/<string:task_id>", endpoint="get-task",
