@@ -14,7 +14,7 @@ api.add_resource(Task, "/api/v1/task/<string:user_id>/<string:task_id>", endpoin
                      methods=["GET", "DELETE"],
                      resource_class_kwargs={"mysql": "mysql", "api": api})
 api.add_resource(Task, "/api/v1/task/create", endpoint="create_task", methods=["POST"],
-                 resource_class_kwargs={"mysql": "mysql", "api": api})
+                 resource_class_kwargs={"mysql": "mysql", "login": api})
 api.add_resource(Task, "/api/v1/task/<string:user_id>/<string:task_id>", endpoint="update-task", methods=["PATCH"],
                  resource_class_kwargs={"mysql": "mysql", "api": api})
 
