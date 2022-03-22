@@ -2,7 +2,10 @@ name: Build Docker and Deploy to heroku
 
 on:
     push:
-        branches: [backend_production]
+        branches: [backend_production, main]
+    workflow_dispatch:
+        branches: [backend_production, main, backend_development]
+
 
 jobs:
     build_docker_image_and_deploy_to_heroku:
