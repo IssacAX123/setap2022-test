@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from flask_restful import Api
-from task import Task
+from endpoints.task import Task
 import logging
 
 app = Flask(__name__)
