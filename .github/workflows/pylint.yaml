@@ -1,0 +1,28 @@
+name: Linting
+
+on:
+  push:
+    branches: ["*feature_*", backend_development]
+  workflow_dispatch:
+    branches: ["*feature_*", backend_development]
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: zcong1993/setup-timezone@master
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install packages
+        run: |
+            pip install -r backend/src/requirements.txt
+            pip install pylint
+      - name: linter
+        uses: alexanderdamiani/pylinter@v1.4.2
+        with:
+          python-root: 'backend/src'
+          flake8-flags: ''
+          mypy-flags: ''
+          fail-on-isort: false
