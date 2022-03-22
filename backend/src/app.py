@@ -21,4 +21,4 @@ api.add_resource(Task, "/api/v1/task/<string:user_id>/<string:task_id>", endpoin
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')
