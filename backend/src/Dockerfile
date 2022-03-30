@@ -1,5 +1,6 @@
 FROM python:3.8
-WORKDIR /backend/src
-COPY . .
+WORKDIR /backend
+RUN mkdir src
+COPY . /src
 RUN pip install -r requirements.txt
-CMD ["python", "app.py"]
+CMD ["python","-m", "src.app"]

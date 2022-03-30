@@ -4,8 +4,8 @@ import bcrypt
 
 from src.models.tables import User, db
 from src.resources.http_status_codes import *
-
 from src.utils.validation import Validation
+
 
 
 class NewUser(Resource):

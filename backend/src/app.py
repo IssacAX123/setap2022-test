@@ -5,17 +5,16 @@ from decouple import config
 
 from flask import Flask
 from flask_restful import Api
-try:
-    from src.models import db
-except:
-    from models import db
+
+from src.models import db
+
 
 def create_app():
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = config("DB_URI")
     db.init_app(app)
     if not app.debug:
-        logging.basicConfig(filename='logs/logs.log', level=logging.WARNING,
+        logging.basicConfig(filename='src/logs/logs.log', level=logging.WARNING,
                             format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
         logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
         logging.info('\n')
