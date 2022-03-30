@@ -5,7 +5,10 @@ from decouple import config
 
 from flask import Flask
 from flask_restful import Api
-from src.models import db
+try:
+    from src.models import db
+except:
+    from models import db
 
 def create_app():
     app = Flask(__name__)
@@ -23,7 +26,11 @@ if __name__ == "__main__":
     api = Api()
     app = create_app()
     app.app_context().push()
-    from src.resources.User import NewUser
+    try:
+        from src.resources.User import NewUser
+    except:
+        from resources.User import NewUser
+
     api.add_resource(NewUser, "/api/v1/user/create", endpoint="create_new_user", methods=['POST'])
     api.init_app(app)
     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
