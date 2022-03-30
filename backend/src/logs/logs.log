@@ -1,27 +1,92 @@
-2022-02-21 22:45:45,717 INFO root MainThread : 
-
-2022-02-21 22:45:45,726 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-02-21 22:46:46,103 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:46:46] "[33mGET / HTTP/1.1[0m" 404 -
-2022-02-21 22:46:54,109 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:46:54] "[33mGET /api/v1/docs HTTP/1.1[0m" 404 -
-2022-02-21 22:47:12,280 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Feb/2022 22:47:12] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:48:01,061 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-02-21 22:49:45,028 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-02-21 22:49:49,257 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:49:49] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:49:50,953 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:49:50] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:49:52,782 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Feb/2022 22:49:52] "[33mGET /api/v1 HTTP/1.1[0m" 404 -
-2022-02-21 22:50:03,954 INFO werkzeug Thread-4 : 127.0.0.1 - - [21/Feb/2022 22:50:03] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:50:32,757 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-02-21 22:50:33,363 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:50:33] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:50:34,396 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:50:34] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:51:01,836 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-02-21 22:51:03,328 INFO werkzeug Thread-1 : 127.0.0.1 - - [21/Feb/2022 22:51:03] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:51:04,313 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:51:04,488 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:51:04,664 INFO werkzeug Thread-4 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-21 22:51:04,811 INFO werkzeug Thread-5 : 127.0.0.1 - - [21/Feb/2022 22:51:04] "[33mGET /api/v1/ HTTP/1.1[0m" 404 -
-2022-02-23 14:40:56,051 INFO werkzeug MainThread :  * Restarting with stat
-2022-02-23 14:40:56,329 WARNING werkzeug MainThread :  * Debugger is active!
-2022-02-23 14:40:56,337 INFO werkzeug MainThread :  * Debugger PIN: 203-451-713
-2022-02-23 14:40:56,368 INFO werkzeug Thread-1 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-02-23 14:41:06,954 INFO werkzeug Thread-2 : 127.0.0.1 - - [23/Feb/2022 14:41:06] "[33mGET / HTTP/1.1[0m" 404 -
-2022-02-23 14:41:07,089 INFO werkzeug Thread-3 : 127.0.0.1 - - [23/Feb/2022 14:41:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-29 19:00:13,776 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:00:13,777 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:01:32,774 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:01:32,777 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:12:48,190 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:12:48,192 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:14:50,405 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:14:50,407 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:16:19,130 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:16:19,132 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:19:13,801 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:19:13,803 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:19:47,386 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:19:47,387 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:20:40,473 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:20:40,475 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:22:01,923 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:22:01,925 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:23:19,089 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:23:19,092 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:24:39,596 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:24:39,598 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:25:34,260 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:25:34,263 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 19:26:44,591 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.9:8080 (Press CTRL+C to quit)
+2022-03-29 19:26:44,592 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 21:53:08,474 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:02:17,152 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:03:06,977 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:04:06,181 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:05:46,830 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:08:34,941 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:11:15,800 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:13:45,032 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:16:14,495 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:17:28,126 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:17:39,471 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:17:54,039 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:18:20,958 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:18:29,201 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:20:23,345 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:20:49,168 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-29 22:21:24,441 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-30 11:34:17,380 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.14.0.2:8080 (Press CTRL+C to quit)
+2022-03-30 11:34:17,384 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-30 12:34:01,584 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.14.0.2:8080 (Press CTRL+C to quit)
+2022-03-30 12:34:01,585 INFO werkzeug MainThread :  * Restarting with stat

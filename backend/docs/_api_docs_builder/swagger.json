@@ -1,0 +1,137 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Co2 Tracker Backend API",
+    "description": "This is the documentation for all the endpoints for Co2 Tracker backend app to connect from a mobile client",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://192.168.1.9:8080/api/v1/",
+      "description": "localhost server"
+    },
+    {
+      "url": "https://car-pollution-t37.herokuapp.com/api/v1/",
+      "description": "main public server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "new user",
+      "description": "Endpoints for registering a new user"
+    }
+  ],
+  "paths": {
+    "/user/create": {
+      "post": {
+        "tags": [
+          "new user"
+        ],
+        "summary": "Register a new User",
+        "operationId": "updatePet",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "first_name": {
+                    "type": "string",
+                    "required": true,
+                    "example": "John"
+                  },
+                  "last_name": {
+                    "type": "string",
+                    "required": true,
+                    "example": "Smith"
+                  },
+                  "email": {
+                    "type": "string",
+                    "required": true,
+                    "example": "jsmith2022@email.com"
+                  },
+                  "login_method": {
+                    "type": "string",
+                    "required": true,
+                    "enum": ["google-oauth", "facebook-oauth", "email"],
+                    "example": "google-oauth"
+                  },
+                  "current_city": {
+                    "type": "number",
+                    "required": true,
+                    "example": "3"
+                  },
+                  "current_mpg": {
+                    "type": "number",
+                    "format": "float",
+                    "required": true,
+                    "example": "24.2"
+                  },
+                  "password": {
+                    "type": "string",
+                    "nullable": true,
+                    "required": "if login_method is email",
+                    "example": null
+                  },
+                  "oauth_id": {
+                    "type": "string",
+                    "nullable": true,
+                    "required": "if login_method is google-oauth or facebook-oauth",
+                    "example": "290f95c41596623c07e3"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Invalid details supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "messages": {
+                      "type": "array",
+                      "example": "['Invalid name', 'Invalid login type']"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Successfully registered user",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "messages": {
+                      "type": "array",
+                      "example": ["Successfully added new user"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   src.endpoints
+   src.resources
 
 Submodules
 ----------
@@ -16,6 +16,14 @@ src.app module
 --------------
 
 .. automodule:: src.app
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.config module
+-----------------
+
+.. automodule:: src.config
    :members:
    :undoc-members:
    :show-inheritance:
